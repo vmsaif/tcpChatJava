@@ -27,8 +27,76 @@ Second, Start the client by running the Client class.
 
 Follow the prompts in the client interface to connect to the server and participate in chat rooms.
 
-## What I learned
+## List of Commands
+A dash `-` is command mode.
+- `-createRoom 'room_Name'` without the quotes.
+- `-rooms` to list all the rooms.
+- `join 1` to join room number 1. It starts from 0. 
+- `-rDetails` current room details.
+- `-leave` to leave to current room.
+
+## What I have learned
 1. How to use sockets and TCP connections to create a client-server application in Java.
 2. How to send and receive data over a network connection.
 3. How to design and implement a simple chat application with multiple chat rooms.
 4. The importance of thread safety when working with concurrent connections.
+
+## Here is a Demonstration of the application step by step.
+
+#### Initial state:
+![](Picture1.png)
+
+After entering the username, the client gets connected to the server via TCP:
+
+![](Picture2.png)
+
+<br>
+
+#### View list of existing chat rooms:
+
+First a room has to be created in order to see the room list. Via `-createRoom room_Name`
+
+![](Picture3.png)
+
+Now list rooms by `-rooms`
+
+![](Picture4.png)
+
+<br>
+
+#### Join existing chat rooms:
+
+![](Picture5.png)
+
+<br>
+
+#### View the number and list of connected users for each room
+
+From any client, write `-rDetails`
+
+![](Picture6.png)
+<br>
+
+#### Check room capacity and restrict access to full capacity rooms
+
+Now initiating 6 clients in total, 5 will be joining in one room, the 6th client won’t be able to join on that room.
+
+![](Picture7.png)
+<br>
+
+#### Create chat rooms
+Write `-createRoom room_name` to create a room.
+
+![](Picture8.png)
+<br>
+
+#### Leave a chat room
+Write `-leave` to leave the room from any client. Other connected clients in the room will be informed.
+
+![](Picture9.png)
+<br>
+
+#### Send messages to chat rooms
+
+![](Picture10.png)
+<br>
