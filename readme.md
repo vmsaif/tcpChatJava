@@ -66,6 +66,7 @@ Now list rooms by `-rooms`
 
 #### Join existing chat rooms:
 
+Write `-join "room number"` without the quotes to join. Room number starts from 0, 1, ...
 ![](assets/images/Picture5.png)
 
 <br>
