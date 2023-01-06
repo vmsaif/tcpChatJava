@@ -31,7 +31,7 @@ Follow the prompts in the client interface to connect to the server and particip
 A dash `-` is command mode.
 - `-createRoom 'room_Name'` without the quotes.
 - `-rooms` to list all the rooms.
-- `join 1` to join room number 1. It starts from 0. 
+- `-join 1` to join room number 1. It starts from 0. 
 - `-rDetails` current room details.
 - `-leave` to leave to current room.
 
