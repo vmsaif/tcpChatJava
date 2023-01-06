@@ -15,15 +15,15 @@ This chat application allows clients to connect to a server and participate in c
 
 From your terminal in the root directory of this project,
 
-    javac src\*.java
+    javac -d bin src\*.java
 
 First, Start the server by running the Server class.
     
-    java -cp src\ Server
+    java -cp bin\ Server
 
 Second, Start the client by running the Client class.
 
-    java -cp src\ Client
+    java -cp bin\ Client
 
 Follow the prompts in the client interface to connect to the server and participate in chat rooms.
 
@@ -44,11 +44,11 @@ A dash `-` is command mode.
 ## Here is a Demonstration of the application step by step.
 
 #### Initial state:
-![](Picture1.png)
+![](assets/images/Picture1.png)
 
 After entering the username, the client gets connected to the server via TCP:
 
-![](Picture2.png)
+![](assets/images/Picture2.png)
 
 <br>
 
@@ -56,17 +56,17 @@ After entering the username, the client gets connected to the server via TCP:
 
 First a room has to be created in order to see the room list. Via `-createRoom room_Name`
 
-![](Picture3.png)
+![](assets/images/Picture3.png)
 
 Now list rooms by `-rooms`
 
-![](Picture4.png)
+![](assets/images/Picture4.png)
 
 <br>
 
 #### Join existing chat rooms:
 
-![](Picture5.png)
+![](assets/images/Picture5.png)
 
 <br>
 
@@ -74,29 +74,29 @@ Now list rooms by `-rooms`
 
 From any client, write `-rDetails`
 
-![](Picture6.png)
+![](assets/images/Picture6.png)
 <br>
 
 #### Check room capacity and restrict access to full capacity rooms
 
 Now initiating 6 clients in total, 5 will be joining in one room, the 6th client won’t be able to join on that room.
 
-![](Picture7.png)
+![](assets/images/Picture7.png)
 <br>
 
 #### Create chat rooms
 Write `-createRoom room_name` to create a room.
 
-![](Picture8.png)
+![](assets/images/Picture8.png)
 <br>
 
 #### Leave a chat room
 Write `-leave` to leave the room from any client. Other connected clients in the room will be informed.
 
-![](Picture9.png)
+![](assets/images/Picture9.png)
 <br>
 
 #### Send messages to chat rooms
 
-![](Picture10.png)
+![](assets/images/Picture10.png)
 <br>
