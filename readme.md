@@ -1,4 +1,7 @@
 # TCP Chat Application
+
+[![Hits](https://hits.sh/github.com/vmsaif/tcpChatJava.svg?label=Visits&color=100b75)](https://hits.sh/github.com/vmsaif/tcpChatJava/)
+
 This chat application allows clients to connect to a server and participate in chat rooms.
 
 ## Features
